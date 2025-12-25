@@ -14,6 +14,7 @@
 body {
   background-color: #06070f;
   background-image: url("images/background.jpg");
+  background-size: cover;
 }
 
 h1, h2 {
@@ -63,7 +64,7 @@ p {
   grid-area: menu;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .container div.menu ul {
@@ -74,6 +75,10 @@ p {
   display: block;
   color: white;
   text-decoration: none;
+}
+
+.menu nav:first-of-type {
+  margin-bottom: 30px; 
 }
 
 .container div.content {
@@ -108,12 +113,18 @@ p {
 	</div>
 	<div class="menu">
 		<h2>menu</h2>
-	<nav>
-		<ul>
-  			<li><a href="">home</a></li>
-			<li><a href="">contacts</a></li>
-		</ul>
-	</nav>
+		<nav>
+			<ul>
+  				<li><a href="">home</a></li>
+				<li><a href="">art</a></li>
+			</ul>
+		</nav>
+		<h2>socials</h2>
+		<nav>
+			<ul>
+  				<li><a href="">discord</a></li>
+			</ul>
+		</nav>
 	</div>
 
 	<div class="content">
@@ -129,7 +140,6 @@ p {
 			<p>I enjoy tinkering with Linux to a varying degree, specifically handpicking packages, optimizing my system, and making my workflow efficient.</p>
 			<p>I draw silly anthropomorphic animals cause animals are so cool and I consider myself a furry, but I don't interact much with the community.</p>
 			<p>I also produce music! I mainly listen to rock. I especially love artists like <a href=https://willyrodriguez.bandcamp.com/ style="color: pink;">WillyRodriguezWasTaken</a>.</p>
-		</div>
 	</div>
 </div>
 </body>
