@@ -34,11 +34,12 @@ p {
   display: grid;
   grid-template-areas:
   "menu content";
+
   grid-template-columns: 1fr 2fr;
 
   min-height: 100vh;
 
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
   
   grid-gap: 25px;
   
@@ -56,11 +57,13 @@ p {
 }
 
 .container div.header {
-  grid-area: header;
 }
 
 .container div.menu {
   grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .container div.menu ul {
