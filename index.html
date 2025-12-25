@@ -13,6 +13,7 @@
 
 body {
   background-color: #06070f;
+  background-image: url("images/background.jpg");
 }
 
 h1, h2 {
@@ -32,9 +33,12 @@ p {
 .container {
   display: grid;
   grid-template-areas:
-  "menu content"
-  "footer footer";
+  "menu content";
   grid-template-columns: 1fr 2fr;
+
+  min-height: 100vh;
+
+  grid-template-rows: auto auto;
   
   grid-gap: 25px;
   
@@ -43,11 +47,20 @@ p {
 
   margin: 0 auto;
   padding: 25px;
+
+  background-color: rgba(6, 7, 15, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid pink;
+}
+
+.container div.header {
+  grid-area: header;
 }
 
 .container div.menu {
   grid-area: menu;
-  padding-top: 25px;
 }
 
 .container div.content {
@@ -56,7 +69,6 @@ p {
   flex-direction: column;
   gap: 15px;
 }
-
 
 .image {
   display: flex;
@@ -79,6 +91,8 @@ p {
 
 
 <div class="container">
+	<div class="header">
+	</div>
 	<div class="menu">
 	<ul>
   		<li><a href="">home</a></li>
@@ -95,7 +109,7 @@ p {
 			</div>
 			<h2>about me</h2>
 			<p><b>Welcome to my website!</b> It's a work in progress, so please be patient. I'm currently experimenting with layouts and testing mobile compatibility.</p>
-			<p>I enjoy tinkering with Linux to a varying degree, specifically handpicking packages, optimizing my system, and automating tasks.</p>
+			<p>I enjoy tinkering with Linux to a varying degree, specifically handpicking packages, optimizing my system, and making my workflow efficient.</p>
 			<p>I draw silly anthropomorphic animals cause animals are so cool and I consider myself a furry, but I don't interact much with the community.</p>
 			<p>I also produce music! I mainly listen to rock. I especially love artists like <a href=https://willyrodriguez.bandcamp.com/ style="color: pink;">WillyRodriguezWasTaken</a>.</p>
 		</div>
