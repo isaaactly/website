@@ -63,6 +63,16 @@ p {
   grid-area: menu;
 }
 
+.container div.menu ul {
+  list-style-type: none;
+}
+
+.container div.menu ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
 .container div.content {
   grid-area: content;
   display: flex; 
@@ -94,9 +104,13 @@ p {
 	<div class="header">
 	</div>
 	<div class="menu">
-	<ul>
-  		<li><a href="">home</a></li>
-	</ul>
+		<h2>menu</h2>
+	<nav>
+		<ul>
+  			<li><a href="">home</a></li>
+			<li><a href="">contacts</a></li>
+		</ul>
+	</nav>
 	</div>
 
 	<div class="content">
